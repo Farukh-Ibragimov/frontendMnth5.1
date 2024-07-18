@@ -28,15 +28,15 @@ export function fetchUsersAction(){
     }
 }
 
-function getId(userId){
+function getId(user){
     return{
         type: types.USERS_ID,
-        payload: userId
+        payload: user
     }
 }
 export function getUsersIdAction(userId){
     return async function(dispatch){
-        const response = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}`,{})
+        const response = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
         const data = await response.json();
         dispatch(getId(data))
     }

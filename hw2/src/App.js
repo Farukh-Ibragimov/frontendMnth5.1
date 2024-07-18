@@ -1,15 +1,18 @@
 import './App.css';
-import MainPages from "./mainPage/MainPages";
-import AboutPage from "./aboutPage/AboutPages";
-import UsersPage from "./usersPage/UsersPage";
+import MainPages from "./pages/mainPage/MainPages";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import UserCard from "./components/UserCard";
+import UserCardId from "./components/UserCardId";
+import MainPage from "./pages/mainPage/MainPages";
 
 function App() {
   return (
-    <div className="App">
-    {/*<MainPages/>*/}
-    {/*  <AboutPage/>*/}
-      <UsersPage/>
-    </div>
+    <BrowserRouter>
+        <Routes>
+            <Route index element={<MainPages/>}/>
+            <Route path='users/:id' element={<UserCardId/>}/>
+        </Routes>
+    </BrowserRouter>
   );
 }
 

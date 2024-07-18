@@ -1,0 +1,27 @@
+body{
+    font-family: Arial,sans-serif;
+}
+.card > img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+img{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+.card{
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: 300px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.addressDeTails{
+    color: blue;
+    margin-top: 8px;
+}

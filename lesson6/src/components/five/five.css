@@ -1,0 +1,17 @@
+.parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+
+}
+.text{
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    color: chartreuse;
+}

@@ -20,7 +20,7 @@ const FormPage = () => {
             setErrorMessage('Пользователь уже занят');
         } else if (data.password === data.confirmPassword) {
             dispatch(getUserInfo(data));
-            setErrorMessage(''); // Clear any previous error message
+            setErrorMessage('');
         }
     };
 
@@ -58,6 +58,7 @@ const FormPage = () => {
         </div>
     );
 };
+// {dfjsadkfjasdk}
 
 export default FormPage;
 
